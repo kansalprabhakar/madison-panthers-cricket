@@ -2,35 +2,6 @@
 
 A responsive cricket scoreboard and **statistics question-answering chat** that runs entirely on GitHub Pages. No hosting bill, API key, backend or build step needed. **All included names and scores are illustrative DEMO data; replace them before publishing for your team.**
 
-## Publish on GitHub Pages
-
-1. Create a new **public** GitHub repository, e.g. `madison-panthers-cricket`.
-2. Upload all files and folders from this project to the repository root (or use the git commands below).
-3. On GitHub go to **Settings → Pages → Build and deployment → Deploy from a branch → main → /(root) → Save**.
-4. Your page URL will be `https://YOUR-USERNAME.github.io/madison-panthers-cricket/` (replace YOUR-USERNAME and repo name).
-
-### Git commands
-
-```bash
-cd madison-panthers-cricket
-git init
-git add .
-git commit -m "Launch cricket scoreboard and stats chat"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/madison-panthers-cricket.git
-git push -u origin main
-```
-
-Create the remote repository on GitHub first. Authentication may require GitHub CLI or a personal access token rather than an account password.
-
-## Local preview
-
-```bash
-cd madison-panthers-cricket
-python3 -m http.server 8000
-```
-
-Open http://localhost:8000. Opening index.html directly as `file://` may prevent browsers from loading JSON files.
 
 ## Replace demo stats
 
@@ -44,8 +15,9 @@ All records must link to a valid `playerId` and `matchId`. `overs` is cricket no
 ## Current features
 
 - Season match totals, recorded player runs, wickets and wins.
-- Leaderboards for runs, wickets, catches, batting strike rate, batting average, economy, run outs and stumpings.
-- Result cards, chat questions and player performance summaries.
+- Leaderboards for runs, wickets, catches, boundaries, batting strike rate, batting average, economy, run outs and stumpings.
+- Completed result cards, upcoming fixture details and player performance summaries.
+- Chat answers for player statistics, comparisons, roster listings, upcoming game time and venue, and listed participants.
 - Responsive mobile display and zero external JavaScript libraries.
 
 ## Important limitations and future upgrade path

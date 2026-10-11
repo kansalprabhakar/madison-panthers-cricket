@@ -1,3 +1,10 @@
 [
-  {"id":"f1","date":"2026-10-11","time":"16:00","opponent":"","venue":""}
+  {
+    "id":"f1",
+    "date":"2026-10-11",
+    "time":"16:00",
+    "opponent":"Local players",
+    "venue":"Palmer Park, Madison",
+    "participants":["You","Hyatt","Nihal","Bhargava Siraj","Salam","K.V. Dhananjaya","Aadi","Ak Sa","Larry","Sunny"]
+  }
 ]
