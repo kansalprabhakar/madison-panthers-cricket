@@ -12,7 +12,7 @@ A responsive cricket scoreboard and **statistics question-answering chat** that 
 ### Git commands
 
 ```bash
-cd cricket-scoreboard
+cd madison-panthers-cricket
 git init
 git add .
 git commit -m "Launch cricket scoreboard and stats chat"
@@ -26,7 +26,7 @@ Create the remote repository on GitHub first. Authentication may require GitHub 
 ## Local preview
 
 ```bash
-cd cricket-scoreboard
+cd madison-panthers-cricket
 python3 -m http.server 8000
 ```
 
@@ -36,6 +36,7 @@ Open http://localhost:8000. Opening index.html directly as `file://` may prevent
 
 - `data/players.json`: player ID, name, team.
 - `data/matches.json`: match ID, date, opponent, venue, innings totals, outcome. `oversFor` and `oversAgainst` use cricket notation (`19.4` means 19 overs and 4 balls).
+- `data/fixtures.json`: upcoming fixture ID, date (`YYYY-MM-DD`), local start time (`HH:MM`), and optional opponent and venue.
 - `data/performances.json`: one record per player **per match**. Record batting runs, balls, boundaries, whether dismissed; bowling overs, conceded runs, wickets; fielding catches, run outs, stumpings.
 
 All records must link to a valid `playerId` and `matchId`. `overs` is cricket notation: `3.4` means 22 legal balls, **not** 3.4 decimal overs. Avoid double-counting run outs as bowler wickets; credited catches refer to fielders. Batting average = runs / dismissals (undefined with zero dismissals); strike rate = runs / balls faced × 100; bowling economy = conceded runs / legal balls × 6. This simple model does not currently record extras, DNB innings separately, live ball-by-ball events, bowling average/strike rate, or partnerships. Player run totals need not match innings totals because extras may exist.
