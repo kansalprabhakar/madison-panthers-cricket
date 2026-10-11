@@ -5,7 +5,7 @@ A responsive cricket scoreboard and **statistics question-answering chat** that 
 
 ## Replace demo stats
 
-- `data/players.json`: player ID, name, team.
+- `data/players.json`: player ID, name, team, and playing role.
 - `data/matches.json`: match ID, date, opponent, venue, innings totals, outcome. `oversFor` and `oversAgainst` use cricket notation (`19.4` means 19 overs and 4 balls).
 - `data/fixtures.json`: upcoming fixture ID, date (`YYYY-MM-DD`), local start time (`HH:MM`), and optional opponent and venue.
 - `data/performances.json`: one record per player **per match**. Record batting runs, balls, boundaries, whether dismissed; bowling overs, conceded runs, wickets; fielding catches, run outs, stumpings.
