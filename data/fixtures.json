@@ -5,6 +5,8 @@
     "time":"16:00",
     "opponent":"Local players",
     "venue":"Palmer Park, Madison",
+    "status":"Called off",
+    "statusReason":"Field closed due to weather.",
     "participants":["You","Hyatt","Nihal","Bhargava Siraj","Salam","K.V. Dhananjaya","Aadi","Ak Sa","Larry","Sunny"]
   }
 ]
