@@ -35,7 +35,7 @@ return null;
 };
 function answer(raw){
 const q=normalizeQuestion(raw),paddedQ=` ${q} `,metric=chatMetric(q);
-if(/\b(vot(e|ing)|poll|choose (a )?day|match day)\b/.test(q))return 'Vote for Saturday, Oct 17 or Sunday, Oct 18 at 4:00 PM using the Google Form: https://docs.google.com/forms/d/e/1FAIpQLSf2A1hHuSdnLvWR2AY56X0HtK4jlwZES0__SmhB1wROLXHm6A/viewform. It asks for your name and mobile number and includes a player-risk acknowledgment. Madison is on CDT on those dates.';
+if(/\b(vot(e|ing)|poll|choose (a )?day|match day)\b/.test(q))return 'Vote for Saturday, Oct 17 or Sunday, Oct 18 at 4:00 PM using the Google Form: https://docs.google.com/forms/d/e/1FAIpQLSf2A1hHuSdnLvWR2AY56X0HtK4jlwZES0__SmhB1wROLXHm6A/viewform?embedded=true&pli=1. It asks for your name and mobile number and includes a player-risk acknowledgment. Madison is on CDT on those dates.';
 if(/\b(join|joining|membership|community group|cricket group|become a member)\b/.test(q))return 'To join the Madison Panthers cricket community, email kansal.prabhakar@gmail.com to request an invitation, or open a pull request in the Madison Panthers Cricket GitHub project with your name and phone number. Pull requests are public, so your phone number will be visible to everyone; email is the private option.';
 const scheduleQuestion=/\b(today|tomorrow|upcoming|next game|next match|game schedule|match schedule|schedule|fixture|game status|match status|called off|cancelled|canceled)\b|\b(?:when|where)\b.*\b(?:game|match|play|venue)\b|\bwho\b.*\b(?:playing|participating)\b/.test(q);
 if(scheduleQuestion){
